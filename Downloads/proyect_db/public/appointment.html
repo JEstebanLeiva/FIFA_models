@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Appointments - VetNova</title>
+  <head>
+  <meta charset="UTF-8" />
+  <title>Users</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    section {
+      border: 1px solid #ccc;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      background-color: #f9f9f9;
+    }
+
+    h1 {
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 5px;
+    }
+
+    input {
+      width: 250px;
+      padding: 5px;
+      margin-top: 3px;
+    }
+
+    button {
+      margin-top: 10px;
+      padding: 6px 12px;
+      cursor: pointer;
+    }
+
+    ul {
+      margin-top: 10px;
+    }
+  </style>
+
+</head>
+</head>
+<body>
+  <h1>Appointments Module</h1>
+  <a href="/index.html">Back to Home</a>
+
+  <section>
+    <h2>Create Appointment</h2>
+
+    <label for="appointment_date">Date:</label><br>
+    <input type="date" id="appointment_date"><br><br>
+
+    <label for="appointment_time">Time:</label><br>
+    <input type="time" id="appointment_time"><br><br>
+
+    <label for="status">Status:</label><br>
+    <input type="text" id="status"><br><br>
+
+    <label for="reason">Reason:</label><br>
+    <input type="text" id="reason"><br><br>
+
+    <label for="appointment_pet_id">Pet ID:</label><br>
+    <input type="number" id="appointment_pet_id"><br><br>
+
+    <button id="createAppointmentBtn">Create Appointment</button>
+    <p id="createAppointmentResult"></p>
+  </section>
+
+  <section>
+    <h2>Get All Appointments</h2>
+    <button id="getAllAppointmentsBtn">Get All Appointments</button>
+    <ul id="getAllAppointmentsResult"></ul>
+  </section>
+
+  <section>
+    <h2>Get Appointment by ID</h2>
+    <label for="appointment_id">Appointment ID:</label><br>
+    <input type="number" id="appointment_id"><br><br>
+
+    <button id="getAppointmentByIdBtn">Get Appointment</button>
+    <ul id="getAppointmentByIdResult"></ul>
+  </section>
+
+  <section>
+    <h2>Update Appointment</h2>
+
+    <label>Appointment ID:</label><br>
+    <input type="number" id="update_appointment_id"><br><br>
+
+    <label>Date:</label><br>
+    <input type="date" id="update_appointment_date"><br><br>
+
+    <label>Time:</label><br>
+    <input type="time" id="update_appointment_time"><br><br>
+
+    <label>Status:</label><br>
+    <input type="text" id="update_status"><br><br>
+
+    <label>Reason:</label><br>
+    <input type="text" id="update_reason"><br><br>
+
+    <label>Pet ID:</label><br>
+    <input type="number" id="update_appointment_pet_id"><br><br>
+
+    <button id="updateAppointmentBtn">Update Appointment</button>
+    <p id="updateAppointmentResult"></p>
+  </section>
+
+  <section>
+    <h2>Delete Appointment</h2>
+
+    <label>Appointment ID:</label><br>
+    <input type="number" id="delete_appointment_id"><br><br>
+
+    <button id="deleteAppointmentBtn">Delete Appointment</button>
+    <p id="deleteAppointmentResult"></p>
+  </section>
+
+  <script src="./js/appointment.js"></script>
+</body>
+</html>

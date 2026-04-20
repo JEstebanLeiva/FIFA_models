@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pets - VetNova</title>
+  <head>
+  <meta charset="UTF-8" />
+  <title>Users</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    section {
+      border: 1px solid #ccc;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      background-color: #f9f9f9;
+    }
+
+    h1 {
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 5px;
+    }
+
+    input {
+      width: 250px;
+      padding: 5px;
+      margin-top: 3px;
+    }
+
+    button {
+      margin-top: 10px;
+      padding: 6px 12px;
+      cursor: pointer;
+    }
+
+    ul {
+      margin-top: 10px;
+    }
+  </style>
+
+</head>
+</head>
+<body>
+  <h1>Pets Module</h1>
+  <a href="/index.html">Back to Home</a>
+
+  <section>
+    <h2>Create Pet</h2>
+
+    <label for="pet_name">Name:</label><br>
+    <input type="text" id="pet_name"><br><br>
+
+    <label for="species">Species:</label><br>
+    <input type="text" id="species"><br><br>
+
+    <label for="breed">Breed:</label><br>
+    <input type="text" id="breed"><br><br>
+
+    <label for="age">Age:</label><br>
+    <input type="number" id="age"><br><br>
+
+    <label for="pet_user_id">User ID:</label><br>
+    <input type="number" id="pet_user_id"><br><br>
+
+    <button id="createPetBtn">Create Pet</button>
+    <p id="createPetResult"></p>
+  </section>
+
+  <section>
+    <h2>Get All Pets</h2>
+    <button id="getAllPetsBtn">Get All Pets</button>
+    <ul id="getAllPetsResult"></ul>
+  </section>
+
+  <section>
+    <h2>Get Pet by ID</h2>
+    <label for="pet_id">Pet ID:</label><br>
+    <input type="number" id="pet_id"><br><br>
+    <button id="getPetByIdBtn">Get Pet</button>
+    <ul id="getPetByIdResult"></ul>
+  </section>
+
+  <section>
+  <h2>Update Pet</h2>
+
+  <label>Pet ID:</label><br>
+  <input type="number" id="update_pet_id"><br><br>
+
+  <label>Name:</label><br>
+  <input type="text" id="update_pet_name"><br><br>
+
+  <label>Species:</label><br>
+  <input type="text" id="update_species"><br><br>
+
+  <label>Breed:</label><br>
+  <input type="text" id="update_breed"><br><br>
+
+  <label>Age:</label><br>
+  <input type="number" id="update_age"><br><br>
+
+  <label>User ID:</label><br>
+  <input type="number" id="update_pet_user_id"><br><br>
+
+  <button id="updatePetBtn">Update Pet</button>
+  <p id="updatePetResult"></p>
+</section>
+
+<section>
+  <h2>Delete Pet</h2>
+
+  <label>Pet ID:</label><br>
+  <input type="number" id="delete_pet_id"><br><br>
+
+  <button id="deletePetBtn">Delete Pet</button>
+  <p id="deletePetResult"></p>
+</section>
+
+  <script src="./js/pet.js"></script>
+</body>
+</html>

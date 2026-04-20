@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services - VetNova</title>
+  <head>
+  <meta charset="UTF-8" />
+  <title>Users</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    section {
+      border: 1px solid #ccc;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      background-color: #f9f9f9;
+    }
+
+    h1 {
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 5px;
+    }
+
+    input {
+      width: 250px;
+      padding: 5px;
+      margin-top: 3px;
+    }
+
+    button {
+      margin-top: 10px;
+      padding: 6px 12px;
+      cursor: pointer;
+    }
+
+    ul {
+      margin-top: 10px;
+    }
+  </style>
+
+</head>
+</head>
+<body>
+  <h1>Services Module</h1>
+  <a href="/index.html">Back to Home</a>
+
+  <section>
+    <h2>Create Service</h2>
+
+    <label for="service_name">Name:</label><br>
+    <input type="text" id="service_name"><br><br>
+
+    <label for="service_description">Description:</label><br>
+    <input type="text" id="service_description"><br><br>
+
+    <label for="service_price">Price:</label><br>
+    <input type="number" step="0.01" id="service_price"><br><br>
+
+    <button id="createServiceBtn">Create Service</button>
+    <p id="createServiceResult"></p>
+  </section>
+
+  <section>
+    <h2>Get All Services</h2>
+    <button id="getAllServicesBtn">Get All Services</button>
+    <ul id="getAllServicesResult"></ul>
+  </section>
+
+  <section>
+    <h2>Get Service by ID</h2>
+    <label for="service_id">Service ID:</label><br>
+    <input type="number" id="service_id"><br><br>
+
+    <button id="getServiceByIdBtn">Get Service</button>
+    <ul id="getServiceByIdResult"></ul>
+  </section>
+
+  <section>
+    <h2>Update Service</h2>
+
+    <label>Service ID:</label><br>
+    <input type="number" id="update_service_id"><br><br>
+
+    <label>Name:</label><br>
+    <input type="text" id="update_service_name"><br><br>
+
+    <label>Description:</label><br>
+    <input type="text" id="update_service_description"><br><br>
+
+    <label>Price:</label><br>
+    <input type="number" step="0.01" id="update_service_price"><br><br>
+
+    <button id="updateServiceBtn">Update Service</button>
+    <p id="updateServiceResult"></p>
+  </section>
+
+  <section>
+    <h2>Delete Service</h2>
+
+    <label>Service ID:</label><br>
+    <input type="number" id="delete_service_id"><br><br>
+
+    <button id="deleteServiceBtn">Delete Service</button>
+    <p id="deleteServiceResult"></p>
+  </section>
+
+  <script src="./js/service.js"></script>
+</body>
+</html>

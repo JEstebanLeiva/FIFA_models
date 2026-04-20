@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Appointment-Service Relation - VetNova</title>
+  <head>
+  <meta charset="UTF-8" />
+  <title>Users</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    section {
+      border: 1px solid #ccc;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      background-color: #f9f9f9;
+    }
+
+    h1 {
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 5px;
+    }
+
+    input {
+      width: 250px;
+      padding: 5px;
+      margin-top: 3px;
+    }
+
+    button {
+      margin-top: 10px;
+      padding: 6px 12px;
+      cursor: pointer;
+    }
+
+    ul {
+      margin-top: 10px;
+    }
+  </style>
+
+</head>
+</head>
+<body>
+  <h1>Appointment-Service Relation</h1>
+  <a href="/index.html">Back to Home</a>
+
+  <section>
+    <h2>Create Relation</h2>
+
+    <label for="rel_appointment_id">Appointment ID:</label><br>
+    <input type="number" id="rel_appointment_id"><br><br>
+
+    <label for="rel_service_id">Service ID:</label><br>
+    <input type="number" id="rel_service_id"><br><br>
+
+    <button id="createRelationBtn">Create Relation</button>
+    <p id="createRelationResult"></p>
+  </section>
+
+  <section>
+    <h2>Get All Relations</h2>
+    <button id="getAllRelationsBtn">Get All Relations</button>
+    <ul id="getAllRelationsResult"></ul>
+  </section>
+
+  <section>
+    <h2>Delete Relation</h2>
+
+    <label for="delete_rel_appointment_id">Appointment ID:</label><br>
+    <input type="number" id="delete_rel_appointment_id"><br><br>
+
+    <label for="delete_rel_service_id">Service ID:</label><br>
+    <input type="number" id="delete_rel_service_id"><br><br>
+
+    <button id="deleteRelationBtn">Delete Relation</button>
+    <p id="deleteRelationResult"></p>
+  </section>
+
+  <script src="./js/appointment_service.js"></script>
+</body>
+</html>
